@@ -5,7 +5,7 @@ Resources:
   checkForObjects:
     Type: 'AWS::Serverless::Function'
     Properties:
-      Handler: automatic_thumbnails/index.handler
+      Handler: automatic-thumbnails/index.handler
       Runtime: nodejs8.10
       Description: ''
       MemorySize: 128
