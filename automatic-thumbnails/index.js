@@ -94,7 +94,7 @@ const reUpload = (src, bucketName, keyName, extension) => {
       const pass = new stream.PassThrough();
       const params = {
         Body: pass,
-        Key: keyName,
+        Key: `thumbnails/${keyName}`,
         Bucket: bucketName,
         ContentType: `image/${extension === 'jpg' ? 'jpeg' : extension}`
       };
